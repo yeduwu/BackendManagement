@@ -1,52 +1,60 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
+		<view class="loginBox">
+			<view class="com_tit">密码登录</view>
+			<view class="com_txt"></view>
+			<view>
+				<input type="text" placeholder="请输入账号"/>
+			</view>
+			<view>
+				<input type="safe-password" password="" maxlength="16" placeholder="请输入密码">
+			</view>
+			<navigator class="btnLogin">登录</navigator>
 		</view>
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	}
+	
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.com_tit{
+	font-size: 30px;
+	font-weight: 300;
+	color: #000;
+	text-align: center;
+}
+.com_txt{
+	font-size: 22px;
+	font-weight: 300;
+	color: #000;
+	text-align: center;
+}
+.loginBox{
+	width: 100%;
+	padding-top: 50px;
+	overflow: hidden;
+}
+.loginBox input{
+	width: 250px;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin: 15px auto;
+	border-radius: 5px;
+	padding: 10px 0 10px 16px;
+	font-size: 16px;
+	
+}
+.btnLogin{
+	width: 132px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	background: #09F;
+	color: #fff;
+	margin: 0 auto;
+}
 </style>

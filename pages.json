@@ -3,7 +3,14 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path" : "pages/dataUpload/dataUpload",
+			"style" : 
+			{
+				"navigationBarTitleText" : "详细资料上传"
 			}
 		}
 	],
